@@ -30,7 +30,7 @@ for f in os.listdir(sketchy_dir) :
 paired_filenames_2 = []
 for f in os.listdir(flickr_dir) :
     if os.path.isdir(os.path.join(sketchy_dir, f)) :
-        for img_file in Path(os.path.join(flickr_dir, f)).itesrdir() : 
+        for img_file in Path(os.path.join(flickr_dir, f)).iterdir() : 
             paired_filenames_2.append(str(img_file))
 
 print("paired file sketchy num: %d" % len(paired_filenames_1))
